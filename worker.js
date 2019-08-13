@@ -16,7 +16,7 @@ const main = async (mailbox) => {
   }
 }
 
-self.onconnect = (port) {
+self.onconnect = (port) => {
   const id = Date.now().toString(32)
   main({
     send(message) {
